@@ -185,6 +185,14 @@
 											uni.previewImage({
 												urls:[savedFilePath]
 											})
+											
+											// 更新本地文件列表 fileList
+											uni.getSavedFileList({
+												success(res) {
+													that.fileList = res.fileList
+												}
+											})
+											
 										})
 										
 									})
