@@ -71,6 +71,14 @@ Joe大叔在这里先行献丑了，解决方案分两步：
 											uni.previewImage({
 												urls:[savedFilePath]
 											})
+											
+											// 更新本地文件列表 fileList
+											uni.getSavedFileList({
+												success(res) {
+													that.fileList = res.fileList
+												}
+											})
+											
 										})
 										
 									})
