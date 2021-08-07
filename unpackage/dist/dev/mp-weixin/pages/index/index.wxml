@@ -1,0 +1,1 @@
+<view class="content"><button data-event-opts="{{[['tap',[['onClick',['$event']]]]]}}" bindtap="__e">{{isDownload?'打开文件':'点击下载'}}</button><text style="width:750rpx;text-align:center;margin-top:20rpx;">{{sizeText}}</text></view>
